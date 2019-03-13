@@ -1,0 +1,8 @@
+#!/bin/bash
+  
+if [[ "${PUB_STANDALONE}" == [tT][rR][uU][eE] ]];then
+    echo "Use Standalone mode."
+    dart ${PUB_SERVER_PATH} -d ${PUB_DATA_PATH} -h ${PUB_HOST} -p ${PUB_PORT} -s
+else
+    dart ${PUB_SERVER_PATH} -d ${PUB_DATA_PATH} -h ${PUB_HOST} -p ${PUB_PORT}
+fi
