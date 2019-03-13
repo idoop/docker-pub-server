@@ -25,5 +25,5 @@ RUN apt update && apt install -y unzip && rm -rf /var/lib/apt/lists/* \
     && pub get
 
 WORKDIR /var/pub_server/
-
+EXPOSE 80
 ENTRYPOINT ["docker-entrypoint"]
